@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+.card {
+  width: 80vw;
+  margin: auto;
+}
+
+.hi-header {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
+  white-space: break-spaces;
+}
+
+h1{
+  color: white;
+}
+
+.disable {
+  pointer-events: none; 
+  -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; 
+  user-select: none;
+}
+
+.card .text-box {
+  position: relative;
+  flex: 1;
+}
+
+.card .text-box-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card .text-box input {
+  width: 100%;
+  padding: 10px 10px 10px 120px;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+  overflow-x: scroll;
+}
+
+.card .text-box label {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.card .text-box input:focus~label,
+.card .text-box input:valid~label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+
+.token-info .text-box .token-value-textarea {
+  width: 100%;
+  height: 120px; /* Adjust height as needed, or use a specific value */
+  padding: 10px 10px 1px 120px;
+  font-size: 12px;
+  color: #fff;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+  resize: none; /* Prevents the user from resizing the textarea */
+  overflow-y: auto; /* Allows for scrolling within the textarea */
+  pointer-events:auto;
+}
